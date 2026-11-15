@@ -1,0 +1,44 @@
+[workspace]
+resolver = "2"
+members = [
+  "crates/sharded-core",
+  "crates/cellnet",
+  "crates/search-api",
+  "crates/search-shard",
+  "crates/search-router",
+  "crates/search-rebalancer",
+  "crates/search-host",
+  "crates/search-eval",
+  "crates/corpus-loader",
+  "crates/search-dashboard",
+  "crates/dev-store",
+  "crates/kill-test",
+]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+license = "Apache-2.0"
+authors = ["Leif Rydenfalk <59741378+Leif-Rydenfalk@users.noreply.github.com>"]
+repository = "https://github.com/ce-net/demo-sharded-search"
+
+[workspace.dependencies]
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+tokio = { version = "1", features = ["rt-multi-thread", "net", "io-util", "sync", "time", "macros", "process", "signal", "fs"] }
+ed25519-dalek = { version = "2", default-features = false, features = ["std", "fast"] }
+getrandom = "0.2"
+sha2 = "0.10"
+hex = "0.4"
+memmap2 = "0.9"
+base64 = "0.22"
+libc = "0.2"
+sharded-core = { path = "crates/sharded-core" }
+cellnet = { path = "crates/cellnet" }
+search-api = { path = "crates/search-api" }
+search-eval = { path = "crates/search-eval" }
+
+[profile.release]
+opt-level = 3
+codegen-units = 4
+debug = false

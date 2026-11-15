@@ -1,0 +1,14 @@
+[package]
+name = "sharded-core"
+description = "Pure parts of the sharded search demo: tokenizer, BM25 segments (mmap), the replica lease rule, the placement planner, merge, recall and latency stats"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+authors.workspace = true
+
+[dependencies]
+serde.workspace = true
+serde_json.workspace = true
+sha2.workspace = true
+hex.workspace = true
+memmap2.workspace = true

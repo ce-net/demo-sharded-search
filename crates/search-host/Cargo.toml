@@ -1,0 +1,17 @@
+[package]
+name = "search-host"
+description = "search.host: the per-machine spawner (CellSpawn, Instances, Stop) that starts shard instances, each with its own key"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+authors.workspace = true
+
+[dependencies]
+serde.workspace = true
+serde_json.workspace = true
+tokio.workspace = true
+hex.workspace = true
+libc.workspace = true
+sharded-core.workspace = true
+cellnet.workspace = true
+search-api.workspace = true

@@ -1,0 +1,17 @@
+[package]
+name = "search-eval"
+description = "The eval cell: an exact brute-force BM25 baseline built once, recall@10 of the sharded answer against it, and a closed-loop query load with per-second p50/p99"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+authors.workspace = true
+
+[dependencies]
+serde.workspace = true
+serde_json.workspace = true
+tokio.workspace = true
+sha2.workspace = true
+hex.workspace = true
+sharded-core.workspace = true
+cellnet.workspace = true
+search-api.workspace = true

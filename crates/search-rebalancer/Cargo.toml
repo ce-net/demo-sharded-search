@@ -1,0 +1,17 @@
+[package]
+name = "search-rebalancer"
+description = "search.rebalancer: watch the shard leases and keep every shard at its replica count, spread across machines"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+authors.workspace = true
+
+[dependencies]
+serde.workspace = true
+serde_json.workspace = true
+tokio.workspace = true
+hex.workspace = true
+libc.workspace = true
+sharded-core.workspace = true
+cellnet.workspace = true
+search-api.workspace = true

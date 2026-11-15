@@ -1,0 +1,17 @@
+[package]
+name = "cellnet"
+description = "A minimal public runtime for the demo's cells: Ed25519 instance identities, attenuating capability chains checked per op with an audit of every refusal, typed calls over TCP, and a state.store-shaped key/value store with a change feed"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+authors.workspace = true
+
+[dependencies]
+serde.workspace = true
+serde_json.workspace = true
+tokio.workspace = true
+ed25519-dalek.workspace = true
+getrandom.workspace = true
+sha2.workspace = true
+hex.workspace = true
+sharded-core.workspace = true

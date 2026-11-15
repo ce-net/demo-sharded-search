@@ -1,0 +1,1510 @@
+{
+  "add_machine": {
+    "answers_hash": "6f3b1e1c2ec05f0003142cfd6fccdb436af37ba3801b6dd1a13a773b79f3faf7",
+    "config_changed": false,
+    "first_replica_ready_ms": 8136,
+    "machine": "machine-d",
+    "ready_instances_per_machine": {
+      "machine-a": 32,
+      "machine-b": 32,
+      "machine-d": 32
+    },
+    "recall_at_10": 0.9202499999999992,
+    "settled_ms": 58996
+  },
+  "answers_identical": true,
+  "boot": {
+    "instances": 96,
+    "leaders": 32,
+    "whole_after_ms": 3526
+  },
+  "cap_test": {
+    "audit_rows": [
+      {
+        "api": "search.shard",
+        "cal": "key:e520c7076d6caa8f grants key:a388092b9cd5c0d7 {\n  may search.shard:health\n  until 2026-11-16T18:08Z\n}\n",
+        "caller": "a388092b9cd5c0d7",
+        "need": "search.shard:query",
+        "op": "query",
+        "reason": "the chain does not hold search.shard:query",
+        "server": "b8b9b214a7eac42b",
+        "t_ms": 1794766123624,
+        "verdict": "refused"
+      }
+    ],
+    "caller": "a388092b9cd5c0d7",
+    "grant_cal": "key:e520c7076d6caa8f grants key:a388092b9cd5c0d7 {\n  may search.shard:health\n  until 2026-11-16T18:08Z\n}\n",
+    "health": "ok (instance b8b9b214a7eac42b)",
+    "query": "refused: query needs search.shard:query",
+    "target": {
+      "id": "b8b9b214a7eac42b",
+      "machine": "machine-a",
+      "shard": 0
+    }
+  },
+  "corpus": {
+    "docs": 4635922,
+    "manifest_hash": "ba695a22c96e758bae928c11e5c6ddf076ae0549817d1b65c520bbcbb05c3f86",
+    "name": "BEIR DBpedia-Entity (English Wikipedia abstracts)",
+    "replicas": 3,
+    "segment_bytes": 1355398334,
+    "shards": 32,
+    "source": "https://public.ukp.informatik.tu-darmstadt.de/thakur/BEIR/datasets/dbpedia-entity.zip (corpus.jsonl)",
+    "source_sha256": "abd0a993f69b0abc2a4a5367695bceb081f0c0efd22d65b9986d4ac6ff8baf95"
+  },
+  "events": [
+    {
+      "id": "6f065bf57529227f",
+      "kind": "drop",
+      "machine": "machine-c",
+      "shard": 0,
+      "t_ms": 1794766173542
+    },
+    {
+      "id": "d92df36bffb91c3e",
+      "kind": "spawn",
+      "machine": "machine-a",
+      "shard": 0,
+      "t_ms": 1794766173542
+    },
+    {
+      "id": "de9195ca8209a014",
+      "kind": "drop",
+      "machine": "machine-c",
+      "shard": 1,
+      "t_ms": 1794766173543
+    },
+    {
+      "id": "4bc900ba0c27683a",
+      "kind": "spawn",
+      "machine": "machine-b",
+      "shard": 1,
+      "t_ms": 1794766173543
+    },
+    {
+      "id": "e81a6b850079dd0c",
+      "kind": "drop",
+      "machine": "machine-c",
+      "shard": 2,
+      "t_ms": 1794766173566
+    },
+    {
+      "id": "a08c0dd39b5ef6aa",
+      "kind": "spawn",
+      "machine": "machine-a",
+      "shard": 2,
+      "t_ms": 1794766173566
+    },
+    {
+      "id": "cb938345e0901071",
+      "kind": "drop",
+      "machine": "machine-c",
+      "shard": 3,
+      "t_ms": 1794766173569
+    },
+    {
+      "id": "c30df693de04693a",
+      "kind": "spawn",
+      "machine": "machine-b",
+      "shard": 3,
+      "t_ms": 1794766173569
+    },
+    {
+      "id": "3965ec064f173a89",
+      "kind": "drop",
+      "machine": "machine-c",
+      "shard": 4,
+      "t_ms": 1794766173572
+    },
+    {
+      "id": "dff1d274efc49fb2",
+      "kind": "spawn",
+      "machine": "machine-b",
+      "shard": 4,
+      "t_ms": 1794766173572
+    },
+    {
+      "id": "20bd9ebddbf394b7",
+      "kind": "drop",
+      "machine": "machine-c",
+      "shard": 5,
+      "t_ms": 1794766173583
+    },
+    {
+      "id": "45a3d93b7e040b13",
+      "kind": "spawn",
+      "machine": "machine-a",
+      "shard": 5,
+      "t_ms": 1794766173583
+    },
+    {
+      "id": "f556e77eeba825a1",
+      "kind": "drop",
+      "machine": "machine-c",
+      "shard": 6,
+      "t_ms": 1794766173585
+    },
+    {
+      "id": "81425dd14f7adbb3",
+      "kind": "spawn",
+      "machine": "machine-a",
+      "shard": 6,
+      "t_ms": 1794766173585
+    },
+    {
+      "id": "62747503af7d3efa",
+      "kind": "drop",
+      "machine": "machine-c",
+      "shard": 7,
+      "t_ms": 1794766173586
+    },
+    {
+      "id": "c1c8d83b2949be4f",
+      "kind": "spawn",
+      "machine": "machine-b",
+      "shard": 7,
+      "t_ms": 1794766173586
+    },
+    {
+      "id": "c0e1a0065c31ac8e",
+      "kind": "drop",
+      "machine": "machine-c",
+      "shard": 8,
+      "t_ms": 1794766173586
+    },
+    {
+      "id": "d18b6c3a803a523a",
+      "kind": "spawn",
+      "machine": "machine-a",
+      "shard": 8,
+      "t_ms": 1794766173586
+    },
+    {
+      "id": "851e8421e7a3287e",
+      "kind": "drop",
+      "machine": "machine-c",
+      "shard": 9,
+      "t_ms": 1794766173586
+    },
+    {
+      "id": "56e7c360dd2519b2",
+      "kind": "spawn",
+      "machine": "machine-b",
+      "shard": 9,
+      "t_ms": 1794766173586
+    },
+    {
+      "id": "5a0be7f1fc9bfc12",
+      "kind": "drop",
+      "machine": "machine-c",
+      "shard": 10,
+      "t_ms": 1794766173586
+    },
+    {
+      "id": "ef56274f00c4bd22",
+      "kind": "spawn",
+      "machine": "machine-b",
+      "shard": 10,
+      "t_ms": 1794766173586
+    },
+    {
+      "id": "54cb5de9cd229ef4",
+      "kind": "drop",
+      "machine": "machine-c",
+      "shard": 11,
+      "t_ms": 1794766173587
+    },
+    {
+      "id": "2554eecafb93c054",
+      "kind": "spawn",
+      "machine": "machine-a",
+      "shard": 11,
+      "t_ms": 1794766173587
+    },
+    {
+      "id": "d700cd660afdca47",
+      "kind": "drop",
+      "machine": "machine-c",
+      "shard": 12,
+      "t_ms": 1794766173587
+    },
+    {
+      "id": "38b8fe416bbc5b1f",
+      "kind": "spawn",
+      "machine": "machine-b",
+      "shard": 12,
+      "t_ms": 1794766173587
+    },
+    {
+      "id": "e6442a8a7c1374ae",
+      "kind": "drop",
+      "machine": "machine-c",
+      "shard": 13,
+      "t_ms": 1794766173587
+    },
+    {
+      "id": "923c8201bc75048d",
+      "kind": "spawn",
+      "machine": "machine-a",
+      "shard": 13,
+      "t_ms": 1794766173587
+    },
+    {
+      "id": "afffb500b1bf03db",
+      "kind": "drop",
+      "machine": "machine-c",
+      "shard": 14,
+      "t_ms": 1794766173588
+    },
+    {
+      "id": "1ac4652cdfc92879",
+      "kind": "spawn",
+      "machine": "machine-a",
+      "shard": 14,
+      "t_ms": 1794766173588
+    },
+    {
+      "id": "61affb100f5abfe7",
+      "kind": "drop",
+      "machine": "machine-c",
+      "shard": 15,
+      "t_ms": 1794766173588
+    },
+    {
+      "id": "26d09cd6478b25e3",
+      "kind": "spawn",
+      "machine": "machine-b",
+      "shard": 15,
+      "t_ms": 1794766173588
+    },
+    {
+      "id": "136c90c2a2b97446",
+      "kind": "drop",
+      "machine": "machine-c",
+      "shard": 16,
+      "t_ms": 1794766173588
+    },
+    {
+      "id": "038277192408c74a",
+      "kind": "spawn",
+      "machine": "machine-a",
+      "shard": 16,
+      "t_ms": 1794766173588
+    },
+    {
+      "id": "30d69d28f7ba4087",
+      "kind": "drop",
+      "machine": "machine-c",
+      "shard": 17,
+      "t_ms": 1794766173588
+    },
+    {
+      "id": "f519dceeb43381fe",
+      "kind": "spawn",
+      "machine": "machine-b",
+      "shard": 17,
+      "t_ms": 1794766173588
+    },
+    {
+      "id": "62ea9caca8419424",
+      "kind": "drop",
+      "machine": "machine-c",
+      "shard": 18,
+      "t_ms": 1794766173588
+    },
+    {
+      "id": "9eba23d36c57ba5c",
+      "kind": "spawn",
+      "machine": "machine-b",
+      "shard": 18,
+      "t_ms": 1794766173588
+    },
+    {
+      "id": "1afb73dce2d5617c",
+      "kind": "drop",
+      "machine": "machine-c",
+      "shard": 19,
+      "t_ms": 1794766173589
+    },
+    {
+      "id": "71d7612e4ae4433b",
+      "kind": "spawn",
+      "machine": "machine-a",
+      "shard": 19,
+      "t_ms": 1794766173589
+    },
+    {
+      "id": "16a86a79abce0829",
+      "kind": "drop",
+      "machine": "machine-c",
+      "shard": 20,
+      "t_ms": 1794766173589
+    },
+    {
+      "id": "854864d1b7bb3ada",
+      "kind": "spawn",
+      "machine": "machine-b",
+      "shard": 20,
+      "t_ms": 1794766173589
+    },
+    {
+      "id": "9d20174c065a1c54",
+      "kind": "drop",
+      "machine": "machine-c",
+      "shard": 21,
+      "t_ms": 1794766173589
+    },
+    {
+      "id": "bb698076ac3cab78",
+      "kind": "spawn",
+      "machine": "machine-a",
+      "shard": 21,
+      "t_ms": 1794766173589
+    },
+    {
+      "id": "68aadadec302bd2b",
+      "kind": "drop",
+      "machine": "machine-c",
+      "shard": 22,
+      "t_ms": 1794766173589
+    },
+    {
+      "id": "e90723806040c9a4",
+      "kind": "spawn",
+      "machine": "machine-b",
+      "shard": 22,
+      "t_ms": 1794766173589
+    },
+    {
+      "id": "3f95f1febaf9be30",
+      "kind": "drop",
+      "machine": "machine-c",
+      "shard": 23,
+      "t_ms": 1794766173589
+    },
+    {
+      "id": "cbc41b8e7f89c1f6",
+      "kind": "spawn",
+      "machine": "machine-a",
+      "shard": 23,
+      "t_ms": 1794766173589
+    },
+    {
+      "id": "73da15327ce3f652",
+      "kind": "drop",
+      "machine": "machine-c",
+      "shard": 24,
+      "t_ms": 1794766173590
+    },
+    {
+      "id": "e31a16ae4fd0bf16",
+      "kind": "spawn",
+      "machine": "machine-b",
+      "shard": 24,
+      "t_ms": 1794766173590
+    },
+    {
+      "id": "074ca89adaaa5e11",
+      "kind": "drop",
+      "machine": "machine-c",
+      "shard": 25,
+      "t_ms": 1794766173590
+    },
+    {
+      "id": "18825030b36d6569",
+      "kind": "spawn",
+      "machine": "machine-a",
+      "shard": 25,
+      "t_ms": 1794766173590
+    },
+    {
+      "id": "bcd69cee3f1efef2",
+      "kind": "drop",
+      "machine": "machine-c",
+      "shard": 26,
+      "t_ms": 1794766173590
+    },
+    {
+      "id": "018b82a0995da0ae",
+      "kind": "spawn",
+      "machine": "machine-a",
+      "shard": 26,
+      "t_ms": 1794766173590
+    },
+    {
+      "id": "b0937aaecefbbdd9",
+      "kind": "drop",
+      "machine": "machine-c",
+      "shard": 27,
+      "t_ms": 1794766173590
+    },
+    {
+      "id": "c31477417ef1bc30",
+      "kind": "spawn",
+      "machine": "machine-b",
+      "shard": 27,
+      "t_ms": 1794766173590
+    },
+    {
+      "id": "4bc7953c5f12f586",
+      "kind": "drop",
+      "machine": "machine-c",
+      "shard": 28,
+      "t_ms": 1794766173590
+    },
+    {
+      "id": "346100b8ab994d75",
+      "kind": "spawn",
+      "machine": "machine-a",
+      "shard": 28,
+      "t_ms": 1794766173590
+    },
+    {
+      "id": "1e4870bd599ce012",
+      "kind": "drop",
+      "machine": "machine-c",
+      "shard": 29,
+      "t_ms": 1794766173590
+    },
+    {
+      "id": "feeace31d5a16669",
+      "kind": "spawn",
+      "machine": "machine-b",
+      "shard": 29,
+      "t_ms": 1794766173590
+    },
+    {
+      "id": "387cd692d5b02953",
+      "kind": "drop",
+      "machine": "machine-c",
+      "shard": 30,
+      "t_ms": 1794766173591
+    },
+    {
+      "id": "7cedd1e403ff2b81",
+      "kind": "spawn",
+      "machine": "machine-b",
+      "shard": 30,
+      "t_ms": 1794766173591
+    },
+    {
+      "id": "385c1ee1463a1de9",
+      "kind": "drop",
+      "machine": "machine-c",
+      "shard": 31,
+      "t_ms": 1794766173591
+    },
+    {
+      "id": "ebf3a807864e2288",
+      "kind": "spawn",
+      "machine": "machine-a",
+      "shard": 31,
+      "t_ms": 1794766173591
+    }
+  ],
+  "identities": [
+    {
+      "docs": 145275,
+      "id": "b8b9b214a7eac42b",
+      "machine": "machine-a",
+      "pubkey": "b8b9b214a7eac42bb7157a26b62223d8542af5eb89631066425ee4a2052c7a22",
+      "role": "leader",
+      "seg": "e221dbfc40b104db",
+      "shard": 0
+    },
+    {
+      "docs": 145275,
+      "id": "6f065bf57529227f",
+      "machine": "machine-c",
+      "pubkey": "6f065bf57529227fc3892f3b6c9fe8b9f80094a6a1d8ce549ed70ba1716b3320",
+      "role": "follower",
+      "seg": "e221dbfc40b104db",
+      "shard": 0
+    },
+    {
+      "docs": 145275,
+      "id": "e1f42da52ea41cbd",
+      "machine": "machine-b",
+      "pubkey": "e1f42da52ea41cbd0df14248236b0ac47a00b0d4b2bceb832ce170733eb5c0b2",
+      "role": "follower",
+      "seg": "e221dbfc40b104db",
+      "shard": 0
+    },
+    {
+      "docs": 144484,
+      "id": "9874b88e82cc8d92",
+      "machine": "machine-b",
+      "pubkey": "9874b88e82cc8d92cf7b2a11a7e1562274d83772c69cd14d95f87af29f83b8fa",
+      "role": "leader",
+      "seg": "f40c4bce20ce863c",
+      "shard": 1
+    },
+    {
+      "docs": 144484,
+      "id": "7e50624b87432272",
+      "machine": "machine-a",
+      "pubkey": "7e50624b87432272733c1582bff76e89f5ee965d39afa0cb885c6c6ade91a119",
+      "role": "follower",
+      "seg": "f40c4bce20ce863c",
+      "shard": 1
+    },
+    {
+      "docs": 144484,
+      "id": "de9195ca8209a014",
+      "machine": "machine-c",
+      "pubkey": "de9195ca8209a014812f351a418f530f0b3421ea8b9d23d211f4de9077439e00",
+      "role": "follower",
+      "seg": "f40c4bce20ce863c",
+      "shard": 1
+    },
+    {
+      "docs": 144460,
+      "id": "2e9e8694639fde51",
+      "machine": "machine-a",
+      "pubkey": "2e9e8694639fde51123266b99a1412a8d5247219aaedfe9ea2e359e3f58bd847",
+      "role": "leader",
+      "seg": "633729c7cf9c4389",
+      "shard": 2
+    },
+    {
+      "docs": 144460,
+      "id": "25f3a114006edbc4",
+      "machine": "machine-b",
+      "pubkey": "25f3a114006edbc48d8dc9da003969defce95e12d796edc263ee3e84fd90643c",
+      "role": "follower",
+      "seg": "633729c7cf9c4389",
+      "shard": 2
+    },
+    {
+      "docs": 144460,
+      "id": "e81a6b850079dd0c",
+      "machine": "machine-c",
+      "pubkey": "e81a6b850079dd0c19db060796cfd820d2b89d34d65e032e0f74ef7cfa714318",
+      "role": "follower",
+      "seg": "633729c7cf9c4389",
+      "shard": 2
+    },
+    {
+      "docs": 145007,
+      "id": "cb938345e0901071",
+      "machine": "machine-c",
+      "pubkey": "cb938345e090107185044b4312c04e7233866b41587321a7e3424db64f66e89a",
+      "role": "leader",
+      "seg": "b61b57bdce25ada5",
+      "shard": 3
+    },
+    {
+      "docs": 145007,
+      "id": "2dd883d1c5f85293",
+      "machine": "machine-a",
+      "pubkey": "2dd883d1c5f852935a60c4b6855a25ef8d0ec6af5e65d180763cd508ce958e58",
+      "role": "follower",
+      "seg": "b61b57bdce25ada5",
+      "shard": 3
+    },
+    {
+      "docs": 145007,
+      "id": "b64abef044b70bb2",
+      "machine": "machine-b",
+      "pubkey": "b64abef044b70bb2709a977b7c4b53559d794d6c17cf863594512a3c2e971dae",
+      "role": "follower",
+      "seg": "b61b57bdce25ada5",
+      "shard": 3
+    },
+    {
+      "docs": 144577,
+      "id": "3965ec064f173a89",
+      "machine": "machine-c",
+      "pubkey": "3965ec064f173a89090280272ec4020883d946641ee1e622977139d2416aee6f",
+      "role": "leader",
+      "seg": "0118adf2c02184c6",
+      "shard": 4
+    },
+    {
+      "docs": 144577,
+      "id": "a0be705b25e33916",
+      "machine": "machine-b",
+      "pubkey": "a0be705b25e33916e92a1c4305eaa6550ed5210d81e1e5f2af1df154ba9218ea",
+      "role": "follower",
+      "seg": "0118adf2c02184c6",
+      "shard": 4
+    },
+    {
+      "docs": 144577,
+      "id": "152a4fc6ac1d2ac7",
+      "machine": "machine-a",
+      "pubkey": "152a4fc6ac1d2ac737864f3df220c40979ffcda2c2c6f4098c1b34f9d22ed614",
+      "role": "follower",
+      "seg": "0118adf2c02184c6",
+      "shard": 4
+    },
+    {
+      "docs": 145219,
+      "id": "c22813a6f88ea47d",
+      "machine": "machine-a",
+      "pubkey": "c22813a6f88ea47db1f7ef8f95f04c182c586289b9244c3245dfa73869130395",
+      "role": "leader",
+      "seg": "5a626ca8cfd42159",
+      "shard": 5
+    },
+    {
+      "docs": 145219,
+      "id": "20bd9ebddbf394b7",
+      "machine": "machine-c",
+      "pubkey": "20bd9ebddbf394b7a9e4705e8803a68309495808550dcab837aacc19c0aacc15",
+      "role": "follower",
+      "seg": "5a626ca8cfd42159",
+      "shard": 5
+    },
+    {
+      "docs": 145219,
+      "id": "898047bd454c0af1",
+      "machine": "machine-b",
+      "pubkey": "898047bd454c0af1439d78879c1530c097c3cb0af668ed9995d8309d6c253cac",
+      "role": "follower",
+      "seg": "5a626ca8cfd42159",
+      "shard": 5
+    },
+    {
+      "docs": 144769,
+      "id": "76fb0560273d613d",
+      "machine": "machine-a",
+      "pubkey": "76fb0560273d613d9fe09aee3fa8da1806e98853d43b0033c726a189be4ee77d",
+      "role": "leader",
+      "seg": "f001a778012a3489",
+      "shard": 6
+    },
+    {
+      "docs": 144769,
+      "id": "5a6f1e8fe7d35941",
+      "machine": "machine-b",
+      "pubkey": "5a6f1e8fe7d3594128940dfedec89c086b53ab4a6e4bec283f87a4f2c5ee737e",
+      "role": "follower",
+      "seg": "f001a778012a3489",
+      "shard": 6
+    },
+    {
+      "docs": 144769,
+      "id": "f556e77eeba825a1",
+      "machine": "machine-c",
+      "pubkey": "f556e77eeba825a1335e6f0192a3b78494c59c72e28d8046d524adcd11722526",
+      "role": "follower",
+      "seg": "f001a778012a3489",
+      "shard": 6
+    },
+    {
+      "docs": 145611,
+      "id": "3e21b26922dd8d82",
+      "machine": "machine-a",
+      "pubkey": "3e21b26922dd8d82ce8cdd11d1e71b7bbf3c090147ccb80db480697679db32a2",
+      "role": "leader",
+      "seg": "63547d0c5b067954",
+      "shard": 7
+    },
+    {
+      "docs": 145611,
+      "id": "62747503af7d3efa",
+      "machine": "machine-c",
+      "pubkey": "62747503af7d3efae35457ac96a13eec568ed8392806729e8f69e1b354b84804",
+      "role": "follower",
+      "seg": "63547d0c5b067954",
+      "shard": 7
+    },
+    {
+      "docs": 145611,
+      "id": "83afd0a5aa7a75d5",
+      "machine": "machine-b",
+      "pubkey": "83afd0a5aa7a75d55ec7a5e76e4b7cc68dc9b63c75ed4cb0787373ac2e49dafe",
+      "role": "follower",
+      "seg": "63547d0c5b067954",
+      "shard": 7
+    },
+    {
+      "docs": 145510,
+      "id": "910c4ee8811d3684",
+      "machine": "machine-a",
+      "pubkey": "910c4ee8811d3684ce312fcafa3c0ce73a68e34251a6ca97bd7003b6483c4a03",
+      "role": "leader",
+      "seg": "cd03262e63fb2ee4",
+      "shard": 8
+    },
+    {
+      "docs": 145510,
+      "id": "c0e1a0065c31ac8e",
+      "machine": "machine-c",
+      "pubkey": "c0e1a0065c31ac8e70eb7a241d31fc4d5dd0beafacf33b65cbcbb4220a5571da",
+      "role": "follower",
+      "seg": "cd03262e63fb2ee4",
+      "shard": 8
+    },
+    {
+      "docs": 145510,
+      "id": "9d9b7bd1930afb40",
+      "machine": "machine-b",
+      "pubkey": "9d9b7bd1930afb40089a9d26b818cae1b3ec43237aa5247fe760d4e087e53542",
+      "role": "follower",
+      "seg": "cd03262e63fb2ee4",
+      "shard": 8
+    },
+    {
+      "docs": 144259,
+      "id": "77f89ad31d508a02",
+      "machine": "machine-b",
+      "pubkey": "77f89ad31d508a02e2b4f704b7d92718b49490009d26626d4d762bdddcc41204",
+      "role": "leader",
+      "seg": "ba007f17c90c5deb",
+      "shard": 9
+    },
+    {
+      "docs": 144259,
+      "id": "45def51e28a11045",
+      "machine": "machine-a",
+      "pubkey": "45def51e28a110451cb67922a6b1156b2eabcd6470d13b8420d088fc3311a619",
+      "role": "follower",
+      "seg": "ba007f17c90c5deb",
+      "shard": 9
+    },
+    {
+      "docs": 144259,
+      "id": "851e8421e7a3287e",
+      "machine": "machine-c",
+      "pubkey": "851e8421e7a3287ef8347bc265a0eb2556f81f334a58abdb036813124f79dc6e",
+      "role": "follower",
+      "seg": "ba007f17c90c5deb",
+      "shard": 9
+    },
+    {
+      "docs": 144594,
+      "id": "f474c05b01bbba6c",
+      "machine": "machine-b",
+      "pubkey": "f474c05b01bbba6cecfafb1e06cfd7320ac1ffe497348af891b82428d2f595db",
+      "role": "leader",
+      "seg": "8b4ec565e3c7b147",
+      "shard": 10
+    },
+    {
+      "docs": 144594,
+      "id": "e043619b9e494da9",
+      "machine": "machine-a",
+      "pubkey": "e043619b9e494da9684236ab4e2725d7698c2782d509fff53aeb6f7e50ef3816",
+      "role": "follower",
+      "seg": "8b4ec565e3c7b147",
+      "shard": 10
+    },
+    {
+      "docs": 144594,
+      "id": "5a0be7f1fc9bfc12",
+      "machine": "machine-c",
+      "pubkey": "5a0be7f1fc9bfc127da1f8443b0882e42b0f460eb8e8a8d5d553888440f32851",
+      "role": "follower",
+      "seg": "8b4ec565e3c7b147",
+      "shard": 10
+    },
+    {
+      "docs": 144601,
+      "id": "ddc29fd0527180f9",
+      "machine": "machine-a",
+      "pubkey": "ddc29fd0527180f957baa844623d20c2011e9c805304040feea6aaeb281a8ea4",
+      "role": "leader",
+      "seg": "27422df457e82f5b",
+      "shard": 11
+    },
+    {
+      "docs": 144601,
+      "id": "54cb5de9cd229ef4",
+      "machine": "machine-c",
+      "pubkey": "54cb5de9cd229ef4c9ff5ae155c0c2dcfc8c3b531619c060ef8b222a329c3692",
+      "role": "follower",
+      "seg": "27422df457e82f5b",
+      "shard": 11
+    },
+    {
+      "docs": 144601,
+      "id": "4991798eeaa93401",
+      "machine": "machine-b",
+      "pubkey": "4991798eeaa934016411a403aa7e17ee840cad44f3c90f2c11ca3f9416ec9f19",
+      "role": "follower",
+      "seg": "27422df457e82f5b",
+      "shard": 11
+    },
+    {
+      "docs": 145234,
+      "id": "36e601b1dbed5c91",
+      "machine": "machine-b",
+      "pubkey": "36e601b1dbed5c91e56e1f8fada9cb14eb430814eb2a54200410e7d48ffafbc0",
+      "role": "leader",
+      "seg": "a3080a8ffd61949f",
+      "shard": 12
+    },
+    {
+      "docs": 145234,
+      "id": "d700cd660afdca47",
+      "machine": "machine-c",
+      "pubkey": "d700cd660afdca47adeafcf70f668cdf995f24e85f29c2fff417ac2fe6d6b29a",
+      "role": "follower",
+      "seg": "a3080a8ffd61949f",
+      "shard": 12
+    },
+    {
+      "docs": 145234,
+      "id": "3a817f5f9705e5d6",
+      "machine": "machine-a",
+      "pubkey": "3a817f5f9705e5d6879861436cd82a8d2d4dabb4719e36f4293fb7b5345a8c84",
+      "role": "follower",
+      "seg": "a3080a8ffd61949f",
+      "shard": 12
+    },
+    {
+      "docs": 144855,
+      "id": "e6442a8a7c1374ae",
+      "machine": "machine-c",
+      "pubkey": "e6442a8a7c1374aeb847c9c694c7208c42ed6df46c64f7aa657bfdf77f95e346",
+      "role": "leader",
+      "seg": "91cf90df788b2c57",
+      "shard": 13
+    },
+    {
+      "docs": 144855,
+      "id": "72373aa12858ac08",
+      "machine": "machine-b",
+      "pubkey": "72373aa12858ac083caa739afe419964143462f7c60ecaebf95cac5e514c0d52",
+      "role": "follower",
+      "seg": "91cf90df788b2c57",
+      "shard": 13
+    },
+    {
+      "docs": 144855,
+      "id": "9d8ddd1f8e939250",
+      "machine": "machine-a",
+      "pubkey": "9d8ddd1f8e9392503c5cd79a19565b7312e9cd4046212bec8dc5d59f732cbb41",
+      "role": "follower",
+      "seg": "91cf90df788b2c57",
+      "shard": 13
+    },
+    {
+      "docs": 144586,
+      "id": "794d60379c33a611",
+      "machine": "machine-a",
+      "pubkey": "794d60379c33a611439fa457bfbe04f682676d809f58c0f332a95dc646d03f07",
+      "role": "leader",
+      "seg": "7b745b946a7a9a91",
+      "shard": 14
+    },
+    {
+      "docs": 144586,
+      "id": "29cc67fc95522bdf",
+      "machine": "machine-b",
+      "pubkey": "29cc67fc95522bdf6c52ec85a0510e97449c204051269cd9f3f5dd94cb7d71d6",
+      "role": "follower",
+      "seg": "7b745b946a7a9a91",
+      "shard": 14
+    },
+    {
+      "docs": 144586,
+      "id": "afffb500b1bf03db",
+      "machine": "machine-c",
+      "pubkey": "afffb500b1bf03dbaa09560279b4577bc915f395aea410260fc33aca0919b6af",
+      "role": "follower",
+      "seg": "7b745b946a7a9a91",
+      "shard": 14
+    },
+    {
+      "docs": 145273,
+      "id": "6f8a688bc92a8db8",
+      "machine": "machine-a",
+      "pubkey": "6f8a688bc92a8db8960bb78e90688cf1eec1e6a4f17afbbb28e211cb9de776da",
+      "role": "leader",
+      "seg": "ff27cc591b1213aa",
+      "shard": 15
+    },
+    {
+      "docs": 145273,
+      "id": "eff9f5bc308e3878",
+      "machine": "machine-b",
+      "pubkey": "eff9f5bc308e38789e99c6180d48bff20c3d655705be551351ecc98ac0348dc6",
+      "role": "follower",
+      "seg": "ff27cc591b1213aa",
+      "shard": 15
+    },
+    {
+      "docs": 145273,
+      "id": "61affb100f5abfe7",
+      "machine": "machine-c",
+      "pubkey": "61affb100f5abfe7b904b3577803bd9a0c3a70ab7b740573455d89caedc544fc",
+      "role": "follower",
+      "seg": "ff27cc591b1213aa",
+      "shard": 15
+    },
+    {
+      "docs": 144538,
+      "id": "7f9a6f96f00abc47",
+      "machine": "machine-a",
+      "pubkey": "7f9a6f96f00abc473183492e5eaf02f112a34ea7e39d3d9449c4c0ce9324c8d7",
+      "role": "leader",
+      "seg": "34a7267d58b199f5",
+      "shard": 16
+    },
+    {
+      "docs": 144538,
+      "id": "136c90c2a2b97446",
+      "machine": "machine-c",
+      "pubkey": "136c90c2a2b97446a3ab916e95d9ba085f0a91aedbfac523c23e9dd33c157a81",
+      "role": "follower",
+      "seg": "34a7267d58b199f5",
+      "shard": 16
+    },
+    {
+      "docs": 144538,
+      "id": "820657308f45ddd2",
+      "machine": "machine-b",
+      "pubkey": "820657308f45ddd27033f126e9577c57977e8c3bbcee164923bd8c1e25099ad2",
+      "role": "follower",
+      "seg": "34a7267d58b199f5",
+      "shard": 16
+    },
+    {
+      "docs": 145067,
+      "id": "30d69d28f7ba4087",
+      "machine": "machine-c",
+      "pubkey": "30d69d28f7ba4087b3dd5226abea97180ac7e14abb5c2116481140168671cd9f",
+      "role": "leader",
+      "seg": "aeb1391225f61ecb",
+      "shard": 17
+    },
+    {
+      "docs": 145067,
+      "id": "6d7ad15fb4119259",
+      "machine": "machine-b",
+      "pubkey": "6d7ad15fb41192595f7c509503eac7d5d69141b1e33fe795d11734b0e89cd4e9",
+      "role": "follower",
+      "seg": "aeb1391225f61ecb",
+      "shard": 17
+    },
+    {
+      "docs": 145067,
+      "id": "a808c6c4ba379ac4",
+      "machine": "machine-a",
+      "pubkey": "a808c6c4ba379ac4e49a85cba4ef7f87b3fe0e44d298e7caeaca8c97ed28085b",
+      "role": "follower",
+      "seg": "aeb1391225f61ecb",
+      "shard": 17
+    },
+    {
+      "docs": 144629,
+      "id": "62ea9caca8419424",
+      "machine": "machine-c",
+      "pubkey": "62ea9caca84194245fa2de0f4dabeb6f3ce81802e82c06ffd977392c3f414684",
+      "role": "leader",
+      "seg": "22be7ca12aa9ae41",
+      "shard": 18
+    },
+    {
+      "docs": 144629,
+      "id": "5e7df0a5dc694f1c",
+      "machine": "machine-b",
+      "pubkey": "5e7df0a5dc694f1caa7dbca67acd86d5dc43e7285eaa563cd5623d83fc91313c",
+      "role": "follower",
+      "seg": "22be7ca12aa9ae41",
+      "shard": 18
+    },
+    {
+      "docs": 144629,
+      "id": "59b987c07aa8e0d9",
+      "machine": "machine-a",
+      "pubkey": "59b987c07aa8e0d9513f7f296029003cdb0a74dba991d04e5984cbf9f15ab536",
+      "role": "follower",
+      "seg": "22be7ca12aa9ae41",
+      "shard": 18
+    },
+    {
+      "docs": 144968,
+      "id": "c33a56a0ed12860c",
+      "machine": "machine-a",
+      "pubkey": "c33a56a0ed12860c7c0b6b9c15babad20488c30f7c88c9dbd7ac40ab21939fad",
+      "role": "leader",
+      "seg": "232d4bd106c1d2ee",
+      "shard": 19
+    },
+    {
+      "docs": 144968,
+      "id": "1afb73dce2d5617c",
+      "machine": "machine-c",
+      "pubkey": "1afb73dce2d5617cc949dcbce58c1a4a519a9d94856f2171a0f7b54751b7fb82",
+      "role": "follower",
+      "seg": "232d4bd106c1d2ee",
+      "shard": 19
+    },
+    {
+      "docs": 144968,
+      "id": "3edc206b2160d688",
+      "machine": "machine-b",
+      "pubkey": "3edc206b2160d688bdf5fb57d6725d05f507de6ad75ad4c0235daaf5d658961b",
+      "role": "follower",
+      "seg": "232d4bd106c1d2ee",
+      "shard": 19
+    },
+    {
+      "docs": 145047,
+      "id": "a07705c2c2313789",
+      "machine": "machine-b",
+      "pubkey": "a07705c2c2313789de6b9c1b11f697373999e988a61af0e797cfbb4e1f2c7444",
+      "role": "leader",
+      "seg": "663717939841f0c1",
+      "shard": 20
+    },
+    {
+      "docs": 145047,
+      "id": "170848dd57ca2e2e",
+      "machine": "machine-a",
+      "pubkey": "170848dd57ca2e2ea05b1fad840623298701034ace092bb6ee29ca9f4c5ff4be",
+      "role": "follower",
+      "seg": "663717939841f0c1",
+      "shard": 20
+    },
+    {
+      "docs": 145047,
+      "id": "16a86a79abce0829",
+      "machine": "machine-c",
+      "pubkey": "16a86a79abce08295655b84479c2186d0de7e6d05cda36b8cab8062273eb6351",
+      "role": "follower",
+      "seg": "663717939841f0c1",
+      "shard": 20
+    },
+    {
+      "docs": 144479,
+      "id": "a3ed9ca8bf53d97e",
+      "machine": "machine-a",
+      "pubkey": "a3ed9ca8bf53d97e354ed21fc525d903ceb3c84b5e11cc60fde3441d2e6ebdd4",
+      "role": "leader",
+      "seg": "c3eb42598c2aed7e",
+      "shard": 21
+    },
+    {
+      "docs": 144479,
+      "id": "9d20174c065a1c54",
+      "machine": "machine-c",
+      "pubkey": "9d20174c065a1c54d721e897479f963c992bac623324c372d3cf61773b706d2c",
+      "role": "follower",
+      "seg": "c3eb42598c2aed7e",
+      "shard": 21
+    },
+    {
+      "docs": 144479,
+      "id": "67f3b968154cfed3",
+      "machine": "machine-b",
+      "pubkey": "67f3b968154cfed3c7f7e05ae148a29e2acdff149e7e7374fb3aaa475b0f47ce",
+      "role": "follower",
+      "seg": "c3eb42598c2aed7e",
+      "shard": 21
+    },
+    {
+      "docs": 146051,
+      "id": "859cb8addea1b934",
+      "machine": "machine-b",
+      "pubkey": "859cb8addea1b9341674d104db4e822ece875cffa2468df5b601131b8c97bd8b",
+      "role": "leader",
+      "seg": "dc03fb005c8f802e",
+      "shard": 22
+    },
+    {
+      "docs": 146051,
+      "id": "28ab971a62f47601",
+      "machine": "machine-a",
+      "pubkey": "28ab971a62f47601e9e7076a95cca51bb9596f09dfc6e86251e3cf389de15370",
+      "role": "follower",
+      "seg": "dc03fb005c8f802e",
+      "shard": 22
+    },
+    {
+      "docs": 146051,
+      "id": "68aadadec302bd2b",
+      "machine": "machine-c",
+      "pubkey": "68aadadec302bd2bcac134b07f55d7327213c6dd9ef297fbc90d73332517b7d3",
+      "role": "follower",
+      "seg": "dc03fb005c8f802e",
+      "shard": 22
+    },
+    {
+      "docs": 145399,
+      "id": "2632801016157c88",
+      "machine": "machine-a",
+      "pubkey": "2632801016157c8864b3bc7fce27f498cbe44feadbb69356603f240e7a620b1e",
+      "role": "leader",
+      "seg": "68b907f36d5f04fd",
+      "shard": 23
+    },
+    {
+      "docs": 145399,
+      "id": "3f95f1febaf9be30",
+      "machine": "machine-c",
+      "pubkey": "3f95f1febaf9be309d2bf1a9ec14df4a98d3a33dde725be8a39548fad75d22f2",
+      "role": "follower",
+      "seg": "68b907f36d5f04fd",
+      "shard": 23
+    },
+    {
+      "docs": 145399,
+      "id": "af54ad8552ca50a3",
+      "machine": "machine-b",
+      "pubkey": "af54ad8552ca50a376d54d03ebe0176f8c93bf0f5dcf0db00f2a501925187502",
+      "role": "follower",
+      "seg": "68b907f36d5f04fd",
+      "shard": 23
+    },
+    {
+      "docs": 144367,
+      "id": "cda383c0a654e86f",
+      "machine": "machine-b",
+      "pubkey": "cda383c0a654e86fce8035adbea852ba591dd73904aa69865cd1a668d3434555",
+      "role": "leader",
+      "seg": "c48aa74b2d5140c6",
+      "shard": 24
+    },
+    {
+      "docs": 144367,
+      "id": "73da15327ce3f652",
+      "machine": "machine-c",
+      "pubkey": "73da15327ce3f652816d8be09d6b2a8c4762fe642d2acf7045051f47dbcc2011",
+      "role": "follower",
+      "seg": "c48aa74b2d5140c6",
+      "shard": 24
+    },
+    {
+      "docs": 144367,
+      "id": "b2c4f488aa60794d",
+      "machine": "machine-a",
+      "pubkey": "b2c4f488aa60794d6634c9c30bc79bef1de317b97c16deb102a28342e365d985",
+      "role": "follower",
+      "seg": "c48aa74b2d5140c6",
+      "shard": 24
+    },
+    {
+      "docs": 144468,
+      "id": "e6b2259b2dcb39d3",
+      "machine": "machine-a",
+      "pubkey": "e6b2259b2dcb39d309c6e4a93565c3a7956d50a9903b52f6c556572315c4fd52",
+      "role": "leader",
+      "seg": "4b718f36401d8e6f",
+      "shard": 25
+    },
+    {
+      "docs": 144468,
+      "id": "074ca89adaaa5e11",
+      "machine": "machine-c",
+      "pubkey": "074ca89adaaa5e11bfa0b133add9579c43e05ca80122e676a45d969c6589027a",
+      "role": "follower",
+      "seg": "4b718f36401d8e6f",
+      "shard": 25
+    },
+    {
+      "docs": 144468,
+      "id": "d95bb9fcadf12d42",
+      "machine": "machine-b",
+      "pubkey": "d95bb9fcadf12d42cdb74918c35bf4a122d76c089962d655c1929221d9e2eb50",
+      "role": "follower",
+      "seg": "4b718f36401d8e6f",
+      "shard": 25
+    },
+    {
+      "docs": 144590,
+      "id": "bcd69cee3f1efef2",
+      "machine": "machine-c",
+      "pubkey": "bcd69cee3f1efef2316128e1fb788e951d3e3a3ecaca2235e33cdb023425d5dd",
+      "role": "leader",
+      "seg": "9d3a1eb9160cd266",
+      "shard": 26
+    },
+    {
+      "docs": 144590,
+      "id": "88792be211a82491",
+      "machine": "machine-a",
+      "pubkey": "88792be211a82491bbe1f7892c79362ca948504f0c5ba0cb9ed5cfffe712dcab",
+      "role": "follower",
+      "seg": "9d3a1eb9160cd266",
+      "shard": 26
+    },
+    {
+      "docs": 144590,
+      "id": "c796b45ff81f213d",
+      "machine": "machine-b",
+      "pubkey": "c796b45ff81f213dee6f054b40f026f5e9db6c00b104e3d33a52bff3943c493a",
+      "role": "follower",
+      "seg": "9d3a1eb9160cd266",
+      "shard": 26
+    },
+    {
+      "docs": 144865,
+      "id": "a5b56366799695ed",
+      "machine": "machine-a",
+      "pubkey": "a5b56366799695ed79b3dd678c2ba4df7d14c97e3d3ef772aeec9c616a50a2f5",
+      "role": "leader",
+      "seg": "7b95d265d02f14dc",
+      "shard": 27
+    },
+    {
+      "docs": 144865,
+      "id": "0e78f155fd9d4129",
+      "machine": "machine-b",
+      "pubkey": "0e78f155fd9d412921239e1cd66f36f030ee93cf80b8780b930af11505e197e6",
+      "role": "follower",
+      "seg": "7b95d265d02f14dc",
+      "shard": 27
+    },
+    {
+      "docs": 144865,
+      "id": "b0937aaecefbbdd9",
+      "machine": "machine-c",
+      "pubkey": "b0937aaecefbbdd98b8c31889518400a5322746a90bfba93c06b2e11fb179161",
+      "role": "follower",
+      "seg": "7b95d265d02f14dc",
+      "shard": 27
+    },
+    {
+      "docs": 145142,
+      "id": "3609688ca9dc31f9",
+      "machine": "machine-a",
+      "pubkey": "3609688ca9dc31f95d49850e8f8273e6b938a4bc950cfd052f2e8beb3e55b057",
+      "role": "leader",
+      "seg": "05b37150fe9bd4ec",
+      "shard": 28
+    },
+    {
+      "docs": 145142,
+      "id": "4bc7953c5f12f586",
+      "machine": "machine-c",
+      "pubkey": "4bc7953c5f12f586acf5157d4e4d0796ab187ad174a585e4470b42bb7b2fd698",
+      "role": "follower",
+      "seg": "05b37150fe9bd4ec",
+      "shard": 28
+    },
+    {
+      "docs": 145142,
+      "id": "195c4d8d743d8a50",
+      "machine": "machine-b",
+      "pubkey": "195c4d8d743d8a5018d78d2dabdbeeb2068fe6c78de51f4bb5861af56edb5301",
+      "role": "follower",
+      "seg": "05b37150fe9bd4ec",
+      "shard": 28
+    },
+    {
+      "docs": 144825,
+      "id": "1e4870bd599ce012",
+      "machine": "machine-c",
+      "pubkey": "1e4870bd599ce012fe73985b7103ea8c2b60b516ecdd7248e444c55bc1cf3155",
+      "role": "leader",
+      "seg": "37b750e52e28904d",
+      "shard": 29
+    },
+    {
+      "docs": 144825,
+      "id": "53f7398c8a7de26c",
+      "machine": "machine-a",
+      "pubkey": "53f7398c8a7de26c0d93b0c6ffcbc0d87110490021bc4ab6d1b75c074629d2bc",
+      "role": "follower",
+      "seg": "37b750e52e28904d",
+      "shard": 29
+    },
+    {
+      "docs": 144825,
+      "id": "e8152b0cf417c66d",
+      "machine": "machine-b",
+      "pubkey": "e8152b0cf417c66de16da0ac68e67f568b099491acfbfd3d349cf414e3431c1c",
+      "role": "follower",
+      "seg": "37b750e52e28904d",
+      "shard": 29
+    },
+    {
+      "docs": 144512,
+      "id": "8095b15e12bf6f6e",
+      "machine": "machine-b",
+      "pubkey": "8095b15e12bf6f6e13aeba82c0a98d2849e8f8e6e438245931a5831ab8412dc6",
+      "role": "leader",
+      "seg": "6e4ea73702820309",
+      "shard": 30
+    },
+    {
+      "docs": 144512,
+      "id": "387cd692d5b02953",
+      "machine": "machine-c",
+      "pubkey": "387cd692d5b0295319366946a87a59c08bbc39ed3aad0b5f8edde491643bd57b",
+      "role": "follower",
+      "seg": "6e4ea73702820309",
+      "shard": 30
+    },
+    {
+      "docs": 144512,
+      "id": "aa9e082cdb9555f9",
+      "machine": "machine-a",
+      "pubkey": "aa9e082cdb9555f9d08f2e5daa3b0b947f923e24db5c278e6aa380186593e895",
+      "role": "follower",
+      "seg": "6e4ea73702820309",
+      "shard": 30
+    },
+    {
+      "docs": 144661,
+      "id": "8447c8acdb46e443",
+      "machine": "machine-b",
+      "pubkey": "8447c8acdb46e4435185823d85d889198b87111c133c5b1753d7548de497c4cb",
+      "role": "leader",
+      "seg": "04151ecbd6e46ad7",
+      "shard": 31
+    },
+    {
+      "docs": 144661,
+      "id": "385c1ee1463a1de9",
+      "machine": "machine-c",
+      "pubkey": "385c1ee1463a1de96dbc4901c5ceabda0d4eafb88e8c751887f16e9ec2fa8d61",
+      "role": "follower",
+      "seg": "04151ecbd6e46ad7",
+      "shard": 31
+    },
+    {
+      "docs": 144661,
+      "id": "9f3d36b908a1ed5c",
+      "machine": "machine-a",
+      "pubkey": "9f3d36b908a1ed5c7cb7ddbed104140be35b4c1699c05b06e0938fad681a1bd9",
+      "role": "follower",
+      "seg": "04151ecbd6e46ad7",
+      "shard": 31
+    }
+  ],
+  "kill": {
+    "amber_max": 7,
+    "elect_ms": [
+      {
+        "machine": "machine-a",
+        "ms": 2864,
+        "new": "2dd883d1c5f85293",
+        "old": "cb938345e0901071",
+        "shard": 3
+      },
+      {
+        "machine": "machine-b",
+        "ms": 3647,
+        "new": "a0be705b25e33916",
+        "old": "3965ec064f173a89",
+        "shard": 4
+      },
+      {
+        "machine": "machine-b",
+        "ms": 3647,
+        "new": "72373aa12858ac08",
+        "old": "e6442a8a7c1374ae",
+        "shard": 13
+      },
+      {
+        "machine": "machine-b",
+        "ms": 3647,
+        "new": "6d7ad15fb4119259",
+        "old": "30d69d28f7ba4087",
+        "shard": 17
+      },
+      {
+        "machine": "machine-b",
+        "ms": 2864,
+        "new": "5e7df0a5dc694f1c",
+        "old": "62ea9caca8419424",
+        "shard": 18
+      },
+      {
+        "machine": "machine-a",
+        "ms": 3079,
+        "new": "88792be211a82491",
+        "old": "bcd69cee3f1efef2",
+        "shard": 26
+      },
+      {
+        "machine": "machine-a",
+        "ms": 2864,
+        "new": "53f7398c8a7de26c",
+        "old": "1e4870bd599ce012",
+        "shard": 29
+      }
+    ],
+    "elect_ms_max": 3647,
+    "elect_ms_median": 3079,
+    "elect_under_two_leases": true,
+    "instances_lost": 32,
+    "instances_per_machine_after": {
+      "machine-a": 48,
+      "machine-b": 48
+    },
+    "leaders_lost": 7,
+    "machine": "machine-c",
+    "rebalancer_actions": 64,
+    "replicas_whole_ms": 6573
+  },
+  "latency": {
+    "after": {
+      "max_ms": 1042.47,
+      "p50_ms": 170.25,
+      "p99_ms": 618.38,
+      "qps": 40.0,
+      "queries": 1213,
+      "secs": 30.3
+    },
+    "before": {
+      "max_ms": 726.25,
+      "p50_ms": 96.34,
+      "p99_ms": 500.6,
+      "qps": 62.4,
+      "queries": 1877,
+      "secs": 30.1
+    },
+    "during": {
+      "max_ms": 668.34,
+      "p50_ms": 205.72,
+      "p99_ms": 555.0,
+      "qps": 34.2,
+      "queries": 225,
+      "secs": 6.6
+    },
+    "errors": 0,
+    "hedged": 7107,
+    "missing_shard_answers": 0
+  },
+  "queries": {
+    "baseline_build_s": 215.495799715,
+    "baseline_sha256": "a2730d9e792de07992d958c48008b301aa80fb148aa74d8a624cfb691800a0e5",
+    "count": 400,
+    "hash": "ab5b2cf44f5c8499761732dac0792438792f46c2ae9789b6597b324d94026fcd"
+  },
+  "recall_after": {
+    "answers_hash": "6f3b1e1c2ec05f0003142cfd6fccdb436af37ba3801b6dd1a13a773b79f3faf7",
+    "errors": 0,
+    "missing_shard_answers": 0,
+    "queries": 400,
+    "recall_at_10": 0.9202499999999992,
+    "secs": 3.424859237
+  },
+  "recall_before": {
+    "answers_hash": "6f3b1e1c2ec05f0003142cfd6fccdb436af37ba3801b6dd1a13a773b79f3faf7",
+    "errors": 0,
+    "missing_shard_answers": 0,
+    "queries": 400,
+    "recall_at_10": 0.9202499999999992,
+    "secs": 3.57812086
+  },
+  "recall_identical": true,
+  "recorded_at": "2026-11-15T18:09Z",
+  "setup": {
+    "concurrency": 8,
+    "hedge": "p95 of recent shard calls, never below the floor",
+    "hedge_ms_floor": 20,
+    "lease_ttl_ms": 3000,
+    "machines": [
+      "machine-a",
+      "machine-b",
+      "machine-c"
+    ],
+    "physical_hosts": "All four machines run on one 16-core ARM cloud server",
+    "seeded_caches": {
+      "machine-a": 32,
+      "machine-b": 32,
+      "machine-c": 32
+    },
+    "tick_ms": 500,
+    "warm_up_s": 15
+  },
+  "what": "kill every instance on one machine under a query loop that never stops"
+}

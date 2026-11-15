@@ -1,0 +1,8 @@
+target/
+node_modules/
+*.key
+keys/
+run/
+data/
+ci-data/
+proof-local/

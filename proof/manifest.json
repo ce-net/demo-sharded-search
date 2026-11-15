@@ -1,0 +1,397 @@
+{
+  "name": "BEIR DBpedia-Entity (English Wikipedia abstracts)",
+  "source": "https://public.ukp.informatik.tu-darmstadt.de/thakur/BEIR/datasets/dbpedia-entity.zip (corpus.jsonl)",
+  "source_sha256": "abd0a993f69b0abc2a4a5367695bceb081f0c0efd22d65b9986d4ac6ff8baf95",
+  "docs": 4635922,
+  "shards": 32,
+  "replicas": 3,
+  "segments": [
+    {
+      "shard": 0,
+      "hash": "e221dbfc40b104db1bf8c74f1be276cefc374923bff12d2959440db9159ba5d1",
+      "docs": 145275,
+      "bytes": 42406051
+    },
+    {
+      "shard": 1,
+      "hash": "f40c4bce20ce863c735f1c4c2a14803e86056ff81a482695167748963daeaaa1",
+      "docs": 144484,
+      "bytes": 42261793
+    },
+    {
+      "shard": 2,
+      "hash": "633729c7cf9c43899b0ec54681d66511298425a72568cd6f114fd8e6c891ef53",
+      "docs": 144460,
+      "bytes": 42254729
+    },
+    {
+      "shard": 3,
+      "hash": "b61b57bdce25ada5bdea8cc5b0bc303e14e758ea1fe1566ec2f69580fd5ed51a",
+      "docs": 145007,
+      "bytes": 42328812
+    },
+    {
+      "shard": 4,
+      "hash": "0118adf2c02184c6bf37a44fcb744219f904f3f8097a3ac3d5e015c9ca64f590",
+      "docs": 144577,
+      "bytes": 42352512
+    },
+    {
+      "shard": 5,
+      "hash": "5a626ca8cfd421594983d7fcbc2c231c11ddc401f1eddc7787045130d989168f",
+      "docs": 145219,
+      "bytes": 42451778
+    },
+    {
+      "shard": 6,
+      "hash": "f001a778012a34892df9939c3fa9cd40c0bc1ddc98df96b1d47886f734ff46ea",
+      "docs": 144769,
+      "bytes": 42295066
+    },
+    {
+      "shard": 7,
+      "hash": "63547d0c5b067954a8ef20c0e11e757ebbcef0296c293efdf37227335e868fe1",
+      "docs": 145611,
+      "bytes": 42533289
+    },
+    {
+      "shard": 8,
+      "hash": "cd03262e63fb2ee48cd0c843f9299de423b637f16f8f948a90148000d715a59e",
+      "docs": 145510,
+      "bytes": 42519042
+    },
+    {
+      "shard": 9,
+      "hash": "ba007f17c90c5deba1974c213e78b08297a973f353a9d640969369b6aca43187",
+      "docs": 144259,
+      "bytes": 42197325
+    },
+    {
+      "shard": 10,
+      "hash": "8b4ec565e3c7b147c25846f2a66f9660e40b4b3479d0efb7db6455a9d758994e",
+      "docs": 144594,
+      "bytes": 42247865
+    },
+    {
+      "shard": 11,
+      "hash": "27422df457e82f5b8151ba3f9a46db257986ce76a22e64e0d6d220e8a43897e6",
+      "docs": 144601,
+      "bytes": 42236595
+    },
+    {
+      "shard": 12,
+      "hash": "a3080a8ffd61949fdd67069f5963a1b134459508951e89341b2d23f26ac8cabd",
+      "docs": 145234,
+      "bytes": 42457755
+    },
+    {
+      "shard": 13,
+      "hash": "91cf90df788b2c574eb5e5a72614e27a490d1f827370602e190a20d42e2939b6",
+      "docs": 144855,
+      "bytes": 42398198
+    },
+    {
+      "shard": 14,
+      "hash": "7b745b946a7a9a911312d9c83b9c6aadcd0e748aee1680cbbbbf181264ad5bcd",
+      "docs": 144586,
+      "bytes": 42214782
+    },
+    {
+      "shard": 15,
+      "hash": "ff27cc591b1213aaf89d40452894b0839aa122d4f89770ecd21b4912545d5a2f",
+      "docs": 145273,
+      "bytes": 42371081
+    },
+    {
+      "shard": 16,
+      "hash": "34a7267d58b199f5a7e1e6143e20c942a0862dcbcfecf7691a2aa7af972604cb",
+      "docs": 144538,
+      "bytes": 42291373
+    },
+    {
+      "shard": 17,
+      "hash": "aeb1391225f61ecbfb01a86e7fbd31963396d84f3dbf228d83ff4a07b1ba4499",
+      "docs": 145067,
+      "bytes": 42352474
+    },
+    {
+      "shard": 18,
+      "hash": "22be7ca12aa9ae41e7311820aeeeb1c6f074394121e5a8dad1b94d314e418f83",
+      "docs": 144629,
+      "bytes": 42325418
+    },
+    {
+      "shard": 19,
+      "hash": "232d4bd106c1d2eee7a3c084c95979f014e102f17cfcfc3860a32b4efd777d6e",
+      "docs": 144968,
+      "bytes": 42381711
+    },
+    {
+      "shard": 20,
+      "hash": "663717939841f0c19a40dd350e7979ef57c29e1030b51aff127e18132f271237",
+      "docs": 145047,
+      "bytes": 42494634
+    },
+    {
+      "shard": 21,
+      "hash": "c3eb42598c2aed7ec24d02b5843f18602be3a6f572b0e5a4a3d511d2d626adeb",
+      "docs": 144479,
+      "bytes": 42231716
+    },
+    {
+      "shard": 22,
+      "hash": "dc03fb005c8f802e55a6fb128f25089522645b7c19653e5b3202c44c5db9c2ae",
+      "docs": 146051,
+      "bytes": 42755291
+    },
+    {
+      "shard": 23,
+      "hash": "68b907f36d5f04fd853c25ebe0437f2d10c7cf6acfdd501af1c4b1b7b047a150",
+      "docs": 145399,
+      "bytes": 42534356
+    },
+    {
+      "shard": 24,
+      "hash": "c48aa74b2d5140c6cb06cbad10401fec361904069dcec9645a6f374507202e64",
+      "docs": 144367,
+      "bytes": 42268720
+    },
+    {
+      "shard": 25,
+      "hash": "4b718f36401d8e6fb171177c40ff837c58404c3cd892bbcc95fc52634b4e0aa5",
+      "docs": 144468,
+      "bytes": 42246839
+    },
+    {
+      "shard": 26,
+      "hash": "9d3a1eb9160cd26654c348f531092bbf3b7930a1aba7f575de638e359a044b4f",
+      "docs": 144590,
+      "bytes": 42207893
+    },
+    {
+      "shard": 27,
+      "hash": "7b95d265d02f14dcb0dad6e1f911ff746e0cae671cedb7f07178edaafa972c6e",
+      "docs": 144865,
+      "bytes": 42462461
+    },
+    {
+      "shard": 28,
+      "hash": "05b37150fe9bd4ecdd593f46be48fcbf609e39d92c63310aed4ac9f3251889a5",
+      "docs": 145142,
+      "bytes": 42496916
+    },
+    {
+      "shard": 29,
+      "hash": "37b750e52e28904d60da740de699f1a8ecc0c01c88ed853681a8777e655b2416",
+      "docs": 144825,
+      "bytes": 42309912
+    },
+    {
+      "shard": 30,
+      "hash": "6e4ea73702820309b27f9d1176168ba1db68746c1e5183918c7a1a8933bf189d",
+      "docs": 144512,
+      "bytes": 42219142
+    },
+    {
+      "shard": 31,
+      "hash": "04151ecbd6e46ad7a51c9abfa64d15baaf6077cf09b98e4866a1c38dbfba4798",
+      "docs": 144661,
+      "bytes": 42292805
+    }
+  ],
+  "collections": [
+    {
+      "shard": 0,
+      "hash": "165190ae8e3213a78a30223db02472be5a0674db1d1092c06ad3e5553097eceb",
+      "docs": 145275,
+      "bytes": 60082510
+    },
+    {
+      "shard": 1,
+      "hash": "eb9a4405434357d974570cedff0b9e83cedfafe34f60883d60858cf473a181f2",
+      "docs": 144484,
+      "bytes": 59781375
+    },
+    {
+      "shard": 2,
+      "hash": "8fa8b96724a97848582890bfcbe3e5fc76586cecf3d693db9b539c0d5fdaed88",
+      "docs": 144460,
+      "bytes": 59812985
+    },
+    {
+      "shard": 3,
+      "hash": "767388a9fdc5503d1507b4cffac521d450d529a54aacff7926b939cbb891a9b9",
+      "docs": 145007,
+      "bytes": 60028268
+    },
+    {
+      "shard": 4,
+      "hash": "d2ee76fff1ce58d9888388786f8bc96b4d7a0fc4436f35133cbc7d29c9e6fbaa",
+      "docs": 144577,
+      "bytes": 59874820
+    },
+    {
+      "shard": 5,
+      "hash": "809fa71eb0d350f3953e04e8cd6b3bd645cf82108fa5923fc979371b2743711d",
+      "docs": 145219,
+      "bytes": 60190971
+    },
+    {
+      "shard": 6,
+      "hash": "c88b886a9400ebbef9a9fbf8035d964eac68fec9e9b2901855182cbc1d166255",
+      "docs": 144769,
+      "bytes": 59857132
+    },
+    {
+      "shard": 7,
+      "hash": "47e7bc1091b91511772da2c9b03995543df73ccb9d6f3e8a19c558a35d05d59b",
+      "docs": 145611,
+      "bytes": 60237179
+    },
+    {
+      "shard": 8,
+      "hash": "6700911c98e21ff211db655e89f125aac6039d0189374aad40211a5c47f6361a",
+      "docs": 145510,
+      "bytes": 60175209
+    },
+    {
+      "shard": 9,
+      "hash": "54d3234c8ab9ccd895dc755079ed5fdb27311dd3eccc24ab1606736595d5cbdd",
+      "docs": 144259,
+      "bytes": 59709340
+    },
+    {
+      "shard": 10,
+      "hash": "5304f6d215f937be724af372cbc28319d289fd2612b729943f05da20ea66d0d8",
+      "docs": 144594,
+      "bytes": 59861695
+    },
+    {
+      "shard": 11,
+      "hash": "30f3ecd3432368659a39db90ff3a2a757256a3ec1eaa66c8662f4bfd610a8ba4",
+      "docs": 144601,
+      "bytes": 59792933
+    },
+    {
+      "shard": 12,
+      "hash": "17492c0a5414321a993fb5b1ea1843fb99b4a87f66ad30598e103ae96c088c0b",
+      "docs": 145234,
+      "bytes": 60180254
+    },
+    {
+      "shard": 13,
+      "hash": "4bdaa53473b8cdf65ee95c8baf949b8c3ab1fe3968b6e9ec8fadb1bcd7e50c36",
+      "docs": 144855,
+      "bytes": 60021311
+    },
+    {
+      "shard": 14,
+      "hash": "71531f5d12d9b6e307da7841608dbd606d7d18307b07aadfa57ebf9093b83cb0",
+      "docs": 144586,
+      "bytes": 59744188
+    },
+    {
+      "shard": 15,
+      "hash": "eb5ee7aa0fa815264e8cbf884faa08fc1f3c04a7441005a67d2ae1406d11d9f8",
+      "docs": 145273,
+      "bytes": 60054654
+    },
+    {
+      "shard": 16,
+      "hash": "5511ce8fc3e99a642e2191c8a6c727f7523690bbacac6aa641ced9a833d649d2",
+      "docs": 144538,
+      "bytes": 59878337
+    },
+    {
+      "shard": 17,
+      "hash": "5e9a5d643d21db012f46076d9135712efb774154e92bde5a87b4c1907359d846",
+      "docs": 145067,
+      "bytes": 59947209
+    },
+    {
+      "shard": 18,
+      "hash": "10bc2ed4982a3263daec3dda2da2eef60511a31f62aae834825fa9ce28bce769",
+      "docs": 144629,
+      "bytes": 59852175
+    },
+    {
+      "shard": 19,
+      "hash": "22207e8e0ca5801b652021d3b18ec89088a0d80de7b02e90bb0ba36a07a900fc",
+      "docs": 144968,
+      "bytes": 60058373
+    },
+    {
+      "shard": 20,
+      "hash": "35bc25747fbdd94b62bb605e0b112055fc1d39d640d478a0de2eae1fb22c5ce6",
+      "docs": 145047,
+      "bytes": 60113712
+    },
+    {
+      "shard": 21,
+      "hash": "b1fa479b47c304dbc6abf25d3764d742b86b04f37eb0e794cd51e876293ea83d",
+      "docs": 144479,
+      "bytes": 59818499
+    },
+    {
+      "shard": 22,
+      "hash": "36ebbf988d516004da14c654dd7dc8c32df488157799ab6a5fd0d1f465e698e0",
+      "docs": 146051,
+      "bytes": 60491873
+    },
+    {
+      "shard": 23,
+      "hash": "5e2377bd80f31173ee1d288aca4bdd4eb4a5d0db992b919ec675f57e84fa4794",
+      "docs": 145399,
+      "bytes": 60187203
+    },
+    {
+      "shard": 24,
+      "hash": "76bcbcd4575a6fcb24eca5f5e29d8884a7bc968350b103c17dd7d64cd319a23c",
+      "docs": 144367,
+      "bytes": 59812636
+    },
+    {
+      "shard": 25,
+      "hash": "36ecae283e2a7ea0c49bc94c648b9361719914b6789d64178560edfc560ccf76",
+      "docs": 144468,
+      "bytes": 59798715
+    },
+    {
+      "shard": 26,
+      "hash": "fdf03ce8ef9fb4e5264c683346b99792a660d168a2e894b5d3be40a9925c7be3",
+      "docs": 144590,
+      "bytes": 59777646
+    },
+    {
+      "shard": 27,
+      "hash": "7900d67ad34f6aad6e4eef96704f5f230e6b7e2633c00bd78b729a0e57ee79c7",
+      "docs": 144865,
+      "bytes": 60004843
+    },
+    {
+      "shard": 28,
+      "hash": "8d3424d4f66aedc2bcbccaf32c1a21a14706eff76f6c776e9e56d8808254de64",
+      "docs": 145142,
+      "bytes": 60045144
+    },
+    {
+      "shard": 29,
+      "hash": "1b38d2c85b59404357a2ab76ce4ae4b2d79acbe74baa9544d237a6c183faab48",
+      "docs": 144825,
+      "bytes": 60011949
+    },
+    {
+      "shard": 30,
+      "hash": "d0bd18169cdec6f093b4aced9d1f674a5d14ebd94034410d5b84a00d0b463918",
+      "docs": 144512,
+      "bytes": 59784402
+    },
+    {
+      "shard": 31,
+      "hash": "d33bf19d96cc5d98bfe5849ce7c30aff71e5e4590a05b6c0b127f6c98f8adcf1",
+      "docs": 144661,
+      "bytes": 59811637
+    }
+  ],
+  "hash": "ba695a22c96e758bae928c11e5c6ddf076ae0549817d1b65c520bbcbb05c3f86"
+}

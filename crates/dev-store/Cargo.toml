@@ -1,0 +1,17 @@
+[package]
+name = "dev-store"
+description = "A state.store-shaped dev store (get, put with if_version, list, change feed) for local runs and CI"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+authors.workspace = true
+
+[dependencies]
+serde.workspace = true
+serde_json.workspace = true
+tokio.workspace = true
+hex.workspace = true
+libc.workspace = true
+sharded-core.workspace = true
+cellnet.workspace = true
+search-api.workspace = true

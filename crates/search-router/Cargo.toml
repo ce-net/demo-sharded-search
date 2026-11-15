@@ -1,0 +1,17 @@
+[package]
+name = "search-router"
+description = "search.router: fan a query out to the leader of every shard, hedge to a follower on timeout, merge the top k"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+authors.workspace = true
+
+[dependencies]
+serde.workspace = true
+serde_json.workspace = true
+tokio.workspace = true
+hex.workspace = true
+libc.workspace = true
+sharded-core.workspace = true
+cellnet.workspace = true
+search-api.workspace = true

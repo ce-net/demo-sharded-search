@@ -1,0 +1,17 @@
+[package]
+name = "search-shard"
+description = "search.shard: one replica of one index segment, with a lease per shard (one leader, ce-replica rule) and ops query, ingest, snapshot, install_snapshot"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+authors.workspace = true
+
+[dependencies]
+serde.workspace = true
+serde_json.workspace = true
+tokio.workspace = true
+hex.workspace = true
+libc.workspace = true
+sharded-core.workspace = true
+cellnet.workspace = true
+search-api.workspace = true
